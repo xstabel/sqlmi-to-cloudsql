@@ -37,7 +37,7 @@ So after editing the bacpac we should follow this [SQL Azure Tip article](https:
 
 In order to facilitate the process I’ve modified a powershell provided by the articles above and created a custom PS in order to automate the process. You can use [the RemoveKeyModelXML Powershell script to fix bacpac](https://github.com/xstabel/sqlmi-to-cloudsql/blob/main/RemoveKeyModelXML.ps1) 
 
-So, run the PS and specigy the path to the original bacpac as a parameter
+So, run the PS and specify the path to the original bacpac as a parameter
 
 
 Then just upload the new patched bacpac to SQL Server:
