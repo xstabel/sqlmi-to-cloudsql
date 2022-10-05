@@ -5,9 +5,7 @@ Migrate from azure sql mi to cloud sql using .bacpac and convert it to .bak
 In order to complete a migration from Azure SQL Managed Instance to Cloud SQL we have to perform two steps in order to obtain the backup file from Azure SQL MI databases. First of all in order to export a backup file from Azure SQL MI the only option is to get a bacpac and not a familiar .bak as needed for Cloud SQL. 
 So, the first step is to obtain the bacpac file and then import it to SQL Server last edition running on GCE. 
 
-```
-As SQL bits are being upgraded regularly (every few months), Managed Instance is running on “evergreen” SQL bits. This means that current Managed Instance version is most of the time actually newer than the latest SQL Server version. As SQL Server backups are not backwards compatible, a backup from Managed Instance cannot be restored to e.g., SQL Server 2019. It's for the same reason as why backup from SQL Server 2019 cannot be restored to SQL Server 2017. 
-```
+`As SQL bits are being upgraded regularly (every few months), Managed Instance is running on “evergreen” SQL bits. This means that current Managed Instance version is most of the time actually newer than the latest SQL Server version. As SQL Server backups are not backwards compatible, a backup from Managed Instance cannot be restored to e.g., SQL Server 2019. It's for the same reason as why backup from SQL Server 2019 cannot be restored to SQL Server 2017.`
 
 In this article [Moving databases from Azure SQL Managed Instance to SQL Server](https://techcommunity.microsoft.com/t5/azure-sql-blog/moving-databases-from-azure-sql-managed-instance-to-sql-server/ba-p/2335297). Microsoft describes two main SQL technologies that can be used today for moving data from Managed Instance to SQL Server. A brief comparison of both technologies:
  
